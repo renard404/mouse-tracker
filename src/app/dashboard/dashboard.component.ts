@@ -19,10 +19,10 @@ export class DashboardComponent implements OnInit {
   private linechart: Chart;
   private yAxis: number[];
 
-  public countData = new BehaviorSubject(this.count);
+  private countData = new BehaviorSubject(this.count);
   countDataObsrv = this.countData.asObservable();
 
-  public chartData = new BehaviorSubject(this.linechart);
+  private chartData = new BehaviorSubject(this.linechart);
   lineChartData = this.chartData.asObservable();
 
   updatechartData(data): void {
@@ -38,7 +38,7 @@ export class DashboardComponent implements OnInit {
     this.drawChart();
   }
 
-  reset(i) {
+  reset(i: number) {
     let arr = Array.from(Array(35), () => 0);
     if (i == 19) {
       this.updatechartData(arr);
@@ -46,7 +46,7 @@ export class DashboardComponent implements OnInit {
     this.drawChart();
   }
 
-  setCount(i) {
+  setCount(i: number) {
     if (i != 19) {
       this.count[i] += 1;
       this.drawChart();

@@ -8,11 +8,6 @@
     height: auto;
 }
 
-.card-title {
-    font-size: 20px;
-    font-style: oblique;
-}
-
 .row {
     border: solid 2px silver;
     margin: 15px;

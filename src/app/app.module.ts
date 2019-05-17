@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing';
-import { SideNavComponent } from './side-nav/side-nav.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule, MatCardModule, MatFormFieldModule, MatGridListModule, MatInputModule,
@@ -15,7 +14,6 @@ import { ChartModule } from 'angular-highcharts';
 @NgModule({
   declarations: [
     AppComponent,
-    SideNavComponent,
     DashboardComponent
   ],
   imports: [
