@@ -9,7 +9,6 @@ export class HighchartsService {
   constructor() { }
   public chart: any;
 
-  xAxis: string[] = ['1']
   public toLineChart( yAxis: any, title: string) {
     this.chart = new Chart({
       chart: {
@@ -22,7 +21,7 @@ export class HighchartsService {
         enabled: false
       },
       xAxis: {
-        categories: this.xAxis
+        categories: []
       },
       yAxis: {
         title: {
@@ -44,7 +43,6 @@ export class HighchartsService {
         data: yAxis
       }]
     });
-    // console.log("adrak", this.chart); 
     return this.chart;
   }
 }

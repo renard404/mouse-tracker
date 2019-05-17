@@ -2,14 +2,16 @@
   <div class="panel">
     <div class="row">
       <div class="col-lg-6 grid-container">
-        <div *ngFor="let c of count1; let i = index" (mouseover)="increment(i, 1)" class="grid-item">{{count1[i]}}</div>
+          <div *ngFor="let c of count; let i = index" class="grid-item" (mouseover)="setCount(i)" (click)="reset(i)">
+          <p *ngIf="i != 19; else end">{{count[i]}}</p>
+          <ng-template #end>END</ng-template>
+        </div>
+        <!-- <div *ngFor="let c of count1; let i = index" (mouseover)="increment(i, 1)" class="grid-item">{{count1[i]}}</div>
         <div class="grid-item" (click)="reset()">END</div>
-        <div *ngFor="let c of count2; let i = index" (mouseover)="increment(i, 2)" class="grid-item">{{count2[i]}}</div>
+        <div *ngFor="let c of count2; let i = index" (mouseover)="increment(i, 2)" class="grid-item">{{count2[i]}}</div> -->
       </div>
       <div class="col-lg-6">
-        <div>
-        </div>
-          <div [chart]="linechart"></div>
+          <div class="card-body" [chart]="linechart"></div>
       </div>
     </div>
   </div>
