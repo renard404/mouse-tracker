@@ -1,0 +1,36 @@
+.outer {
+    height: auto;
+    overflow: hidden;
+}
+
+.panel {
+    overflow: hidden;
+    height: auto;
+}
+
+.card-title {
+    font-size: 20px;
+    font-style: oblique;
+}
+
+.row {
+    border: solid 2px silver;
+    margin: 15px;
+    padding: 10px;
+    height: 650px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 10px;
+    grid-column: 15px;
+    grid-row: 15px;
+  }
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }

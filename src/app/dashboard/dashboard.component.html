@@ -1,0 +1,18 @@
+<div class="outer">
+  <div class="panel">
+    <div class="row">
+      <div class="col-lg-6 grid-container">
+        <div *ngFor="let c of count1; let i = index" (mouseover)="increment(i, count1)" class="grid-item">{{count1[i]}}</div>
+        <div class="grid-item" (click)="reset()">END</div>
+        <div *ngFor="let c of count2; let i = index" (mouseover)="increment(i, count2)" class="grid-item">{{count2[i]}}</div>
+      </div>
+      <div class="col-lg-6">
+        <div>
+          <!-- <google-chart [data]="data"></google-chart> -->
+        </div>
+          <!-- <div [chart] = "linechart"></div> -->
+          <!-- <div [chart]="chart" style="width:100%"></div> -->
+      </div>
+    </div>
+  </div>
+</div>
