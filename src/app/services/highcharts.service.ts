@@ -11,9 +11,6 @@ export class HighchartsService {
 
   public toLineChart( yAxis: any, title: string) {
     this.chart = new Chart({
-      chart: {
-        type: 'line'
-      },
       title: {
         text: title
       },
