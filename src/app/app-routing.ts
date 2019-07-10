@@ -10,8 +10,8 @@ const routes: Routes = [
         pathMatch: 'full'
     },
     {
-        path: 'tab',
-        component: TabComponent
+        path: 'dashboard',
+        component: DashboardComponent
     }
 ];
 
