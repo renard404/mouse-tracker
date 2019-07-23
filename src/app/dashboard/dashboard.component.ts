@@ -15,8 +15,8 @@ export class DashboardComponent implements OnInit {
     private _chart: HighchartsService
   ) { }
 
-  private count: number[];
-  private linechart: Chart;
+  public count: number[];
+  public linechart: Chart;
   private yAxis: number[];
 
   private countData = new BehaviorSubject(this.count);
